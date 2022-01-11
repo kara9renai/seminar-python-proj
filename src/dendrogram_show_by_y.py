@@ -1,12 +1,10 @@
 import pandas as pd
-import numpy as np
-from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
+from scipy.cluster.hierarchy import dendrogram, linkage
 # create dataframe from csvfile.
 
-df = pd.read_csv("year_clustering.csv")
-cust_df = pd.read_csv("year_clustering.csv")
+df = pd.read_csv("../csv/clustering/year_clustering.csv")
+cust_df = pd.read_csv("../csv/clustering/year_clustering.csv")
 
 label = df["Year"].tolist()
 
