@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # csvファイルは任意のものを選ぶ
-df = pd.read_csv("Book2.csv")
+df = pd.read_csv("../csv/ggap_tfp_all_the_country.csv")
 
 x = df[["GGAP"]]
 y = df[["TFP"]]
