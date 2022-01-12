@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # csvファイルは任意のものを選ぶ
-df = pd.read_csv("../csv/ggap_tfp_all_the_country.csv")
+df = pd.read_csv("../../csv/ggap_tfp_all_the_country.csv")
 
 x = df[["GGAP"]]
 y = df[["TFP"]]
@@ -16,7 +16,7 @@ plt.plot(x, y, "o")
 plt.plot(x, model_lr.predict(x), linestyle="solid")
 # タイトルも任意のものを選ぶ
 plt.title("Regression Analysis in all the country")
-dirname = "../output/"
+dirname = "../../output/"
 plt.savefig(dirname + "image.png")
 plt.show()
 
