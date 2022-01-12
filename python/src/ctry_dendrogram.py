@@ -4,8 +4,8 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 
 # create dataframe from csvfile.
 
-df = pd.read_csv("../csv/clustering/ctry_clustering.csv")
-cust_df = pd.read_csv("../csv/clustering/ctry_clustering.csv")
+df = pd.read_csv("../../csv/clustering/ctry_clustering.csv")
+cust_df = pd.read_csv("../../csv/clustering/ctry_clustering.csv")
 
 label = df["Country"].tolist()
 
@@ -21,7 +21,7 @@ dendrogram(Z, labels=label, color_threshold=4)
 
 
 # 画像を保存する
-dirname = "../output/"
+dirname = "../../output/"
 
 plt.savefig(dirname + "image.png")
 
