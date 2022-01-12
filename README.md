@@ -6,3 +6,10 @@ git clone
 cd seminar-python-proj
 docker compose up -d
 ```
+
+## How to run python file.
+```{python}
+# in containers
+cd src
+python3 year_dendrogram.py
+```
