@@ -1,4 +1,3 @@
-# import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram, linkage
@@ -22,11 +21,8 @@ dendrogram(Z,
 labels=label,
 color_threshold=4)
 
-"""
-画像を保存する
 dirname = "../output/"
 
 plt.savefig(dirname + "image.png")
-"""
 
 plt.show()
