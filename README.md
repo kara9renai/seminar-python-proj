@@ -9,7 +9,11 @@ docker compose up -d
 
 ## How to run python file.
 ```{python}
-# in containers
+make container
+# inside container
 cd src
 python3 year_dendrogram.py
+# If you want to go out of the container, run this command.
+exit
+#outside the container
 ```
