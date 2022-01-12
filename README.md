@@ -14,7 +14,7 @@ docker compose up -d
 ```{python}
 make container
 # inside container
-cd src
+cd python/src
 python3 year_dendrogram.py
 # If you want to go out of the container, run this command.
 exit
