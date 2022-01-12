@@ -2,7 +2,7 @@
 ## Set up by using docker
 ```
 mkdir hogehoge && cd hogehoge
-git clone 
+git clone https://github.com/kara9renai/seminar-python-proj.git
 cd seminar-python-proj
 docker compose up -d
 ```
