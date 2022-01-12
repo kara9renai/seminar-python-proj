@@ -1,5 +1,8 @@
 # seminar-python-proj
-## Set up by using docker
+
+(My recommendation is that you run this commands in linux envrionment.)
+
+## Set up by using docker 
 ```
 mkdir hogehoge && cd hogehoge
 git clone https://github.com/kara9renai/seminar-python-proj.git
@@ -15,5 +18,5 @@ cd src
 python3 year_dendrogram.py
 # If you want to go out of the container, run this command.
 exit
-#outside the container
+# outside the container
 ```
