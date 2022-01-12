@@ -1,35 +1,32 @@
-# This is a basic workflow to help you get started with Actions
+name: python auto code format
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
-    paths: "src/**"
-  pull_request:
-    branches: [ main ]
+    branches: 
+      - main
+      - develop
+    paths:
+      - 'python/**'
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   black:
+    name: Check code style with Black
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./src
-    steps:
-      - name: Setup Python
+        working-directory: ./python
+    steps:    
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python 3.6.8
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8.12
-          architecture: x64
+          python-version: 3.6.8
       - name: Install black
         run: pip install black
-      - name: Run code format
+      - name: run code format
         run: find . -type f -name "*.py" | xargs black
       - name: git settings
         run: |
