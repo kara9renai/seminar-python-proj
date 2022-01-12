@@ -16,6 +16,8 @@ plt.plot(x, y, 'o')
 plt.plot(x, model_lr.predict(x), linestyle="solid")
 # タイトルも任意のものを選ぶ
 plt.title("Regression Analysis in all the country")
+dirname = "../output/"
+plt.savefig(dirname + "image.png")
 plt.show()
 
 print('モデル関数の回帰変数 w1: %.3f' %model_lr.coef_)
